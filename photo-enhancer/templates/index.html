@@ -1,0 +1,24 @@
+echo ^<!DOCTYPE html^> > templates/index.html
+echo ^<html lang="en"^> >> templates/index.html
+echo ^<head^> >> templates/index.html
+echo     ^<meta charset="UTF-8"^> >> templates/index.html
+echo     ^<meta name="viewport" content="width=device-width, initial-scale=1.0"^> >> templates/index.html
+echo     ^<title^>Photo Enhancer^</title^> >> templates/index.html
+echo     ^<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"^> >> templates/index.html
+echo ^</head^> >> templates/index.html
+echo ^<body^> >> templates/index.html
+echo     ^<div class="container"^> >> templates/index.html
+echo         ^<h1^>Photo Enhancer^</h1^> >> templates/index.html
+echo         ^<form action="/" method="post" enctype="multipart/form-data"^> >> templates/index.html
+echo             ^<input type="file" name="file" accept="image/*"^> >> templates/index.html
+echo             ^<button type="submit"^>Upload and Enhance^</button^> >> templates/index.html
+echo         ^</form^> >> templates/index.html
+echo         {% if uploaded_image %} >> templates/index.html
+echo         ^<h2^>Original Image^</h2^> >> templates/index.html
+echo         ^<img src="{{ url_for('static', filename='uploads/' ~ uploaded_image) }}" alt="Uploaded Image"^> >> templates/index.html
+echo         ^<h2^>Enhanced Image^</h2^> >> templates/index.html
+echo         ^<img src="{{ url_for('static', filename='uploads/' ~ enhanced_image) }}" alt="Enhanced Image"^> >> templates/index.html
+echo         {% endif %} >> templates/index.html
+echo     ^</div^> >> templates/index.html
+echo ^</body^> >> templates/index.html
+echo ^</html^> >> templates/index.html

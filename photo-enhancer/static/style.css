@@ -1,0 +1,48 @@
+echo body { > static/styles.css
+    echo     font-family: Arial, sans-serif; >> static/styles.css
+    echo     background-color: #f4f4f4; >> static/styles.css
+    echo     margin: 0; >> static/styles.css
+    echo     padding: 0; >> static/styles.css
+    echo } >> static/styles.css
+    echo. >> static/styles.css
+    echo .container { >> static/styles.css
+    echo     width: 50%%; >> static/styles.css
+    echo     margin: 0 auto; >> static/styles.css
+    echo     padding: 20px; >> static/styles.css
+    echo     background-color: #fff; >> static/styles.css
+    echo     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); >> static/styles.css
+    echo } >> static/styles.css
+    echo. >> static/styles.css
+    echo h1 { >> static/styles.css
+    echo     text-align: center; >> static/styles.css
+    echo } >> static/styles.css
+    echo. >> static/styles.css
+    echo form { >> static/styles.css
+    echo     display: flex; >> static/styles.css
+    echo     flex-direction: column; >> static/styles.css
+    echo     align-items: center; >> static/styles.css
+    echo } >> static/styles.css
+    echo. >> static/styles.css
+    echo input[type="file"] { >> static/styles.css
+    echo     margin: 20px 0; >> static/styles.css
+    echo } >> static/styles.css
+    echo. >> static/styles.css
+    echo button { >> static/styles.css
+    echo     padding: 10px 20px; >> static/styles.css
+    echo     background-color: #007BFF; >> static/styles.css
+    echo     color: #fff; >> static/styles.css
+    echo     border: none; >> static/styles.css
+    echo     cursor: pointer; >> static/styles.css
+    echo } >> static/styles.css
+    echo. >> static/styles.css
+    echo button:hover { >> static/styles.css
+    echo     background-color: #0056b3; >> static/styles.css
+    echo } >> static/styles.css
+    echo. >> static/styles.css
+    echo img { >> static/styles.css
+    echo     max-width: 100%%; >> static/styles.css
+    echo     height: auto; >> static/styles.css
+    echo     display: block; >> static/styles.css
+    echo     margin: 20px 0; >> static/styles.css
+    echo } >> static/styles.css
+    
